@@ -15,6 +15,10 @@
   text-align: center;
 }
 
+a:hover {
+  background-color: cadetblue;
+}
+
 /* 
   STEP 2 — Child combinator
   Selecciona únicamente a los hijos.
