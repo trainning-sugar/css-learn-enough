@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements</title>
+  <style>
+      /* Before - antes */
+      .quote::before {
+        content: "Soy magic que aparece sin querer ";
+        font-size: 20px;
+        color: grey;
+      }
+
+      /*Selecciona el texto 
+        .quote → selecciona el elemento.
+        :hover → detecta cuando el cursor está sobre el elemento.
+        ::before → selecciona el pseudoelemento creado antes del contenido. */
+
+      .quote:hover::before {
+        color: blueviolet;
+      }
+
+      /* After - despues */
+      .quote::after {
+        content: " aparezco despues de la quote";
+        font-size: 30px; 
+        color: brown;
+      }
+
+      .quote:hover::after {
+        color: yellowgreen
+      }
+
+  </style>
+
+</head>
+<body>
+  <p class="quote">This is a quote</p>
+</body>
+</html>

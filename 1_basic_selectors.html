@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Selectors</title>
+  <style>
+   
+  /* BASIC SELECTORS */
+  
+  /* Universal selector */
+    * {
+      margin: 0;
+      padding: 0; 
+    }
+
+    /* Element selector*/
+    h1 {
+      color: darkblue;
+      font-size: 24px;
+    }
+
+    p {
+      color: gray;
+    }
+
+   /* Class selector */ 
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+   /* Id selector */ 
+    #uniqueText {
+      color: red;
+      font-size: 20px;
+    }
+
+   /*Attibute selectors */
+   input[type="text"] {
+    border: 2px solid blue;
+   } 
+
+    input[type="password"] {
+    border: 2px solid green;
+   } 
+
+  </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>Description</p>
+    <p class="highlight">paragraph</p>
+    <p class="highlight">paragraph</p>
+    <p class="highlight">paragraph</p>
+    <p class="highlight">paragraph</p>
+    <p class="highlight">paragraph</p>
+    <p class="highlight">paragraph</p>
+    <p class="highlight">paragraph</p>
+    <p>Not highlight</p>
+    <p id="uniqueText">Hola como estas espero no del todo mal</p>
+
+    <input type="text" placeholder="Enter your name" />
+    <input type="password" placeholder="Enter your password" />
+
+</body>
+</html>

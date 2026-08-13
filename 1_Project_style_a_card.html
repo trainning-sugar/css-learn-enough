@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style a card - Box model</title>
+  <!--
+    - Box Model consists of: Content, Padding, Border, Margin 
+    - Box-sizing : border-box: ensures width and height include padding and border
+    - Margin: Create outer space, while padding create inner space
+    - Borders: wrap around elements and can have different styles
+    - Box shadows : add depth for a modern look
+  -->
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: row; /*Column - row - reverse */
+      gap: 10px; /*Margin en flex */
+      flex-wrap: wrap /* «Si no hay espacio suficiente, mueve los elementos a la siguiente línea».*/ 
+    }
+
+
+    .box {
+      outline: 1px solid blue;
+      box-sizing: border-box;
+      width: 550px;
+      padding: 10px;
+      border: 2px solid green;
+      text-align: center;
+    }
+
+   
+    .box:hover {
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2) ;
+    }
+
+
+    .card {
+      outline: 1px solid blue;
+      width: 250px; /* amarrado al box-sizing para que siempre mida 250px sin importar el contenido incluye padding y border*/
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      border: 2px solid #ddd;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Luz Vilchez</h2>
+    <p>Analista de producto</p>
+  </div>
+  <div class="card">
+    <h2>Lourdes Vilchez</h2>
+    <p>Web Developer</p>
+  </div>
+  <div class="card">
+    <h2>Lourdes Vilchez</h2>
+    <p>Web Developer</p>
+  </div>
+  <div class="card">
+    <h2>Lourdes Vilchez</h2>
+    <p>Web Developer</p>
+  </div>
+  <div class="card">
+    <h2>Lourdes Vilchez</h2>
+    <p>Web Developer</p>
+  </div>
+  <div class="box">
+    <h3>Mi tarjeta</h3>
+    <p>Telf:123456</p>
+  </div>
+</body>
+</html>

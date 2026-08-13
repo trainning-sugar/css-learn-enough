@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinators</title>
+
+  <style>
+    /* Descendientes */
+    div p {
+      color: green
+    }
+
+    /* Hijo directo */
+    div > p {
+      color: blue;
+    }
+
+    /* Hermano adyacente */
+     h2 + p {
+      color: purple
+    }
+
+    /* Hermano general */
+    h3 ~ p {
+      color: mediumvioletred
+    }
+  </style>
+
+</head>
+<body>
+  <div>
+    <p>this is inside a div</p>
+    <p>this is inside a div</p>
+    <p>this is inside a div</p>
+  </div>
+
+  <div>
+    <p>Direct Child</p>
+    <section>
+      <p>Not a direct child</p>
+    </section>
+  </div>
+
+  <h2>Hola mundo aqui solo voy por mi hermano que me sigue</h2>
+  <p>Aqui soy seleccionado yo</p>
+  <p>Aqui yo ya no soy seleccionado</p>
+  <p>Aqui no</p>
+
+  <h3>Hola aqui estoy yo y voy a por todos mis hermanos</h3>
+  <p>Aqui</p>
+  <p>Aqui 2</p>
+  <p>Aqui 3</p>
+  <p>Aqui 4</p>
+
+</body>
+</html>
