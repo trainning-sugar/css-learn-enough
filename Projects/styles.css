@@ -1,0 +1,48 @@
+/* 
+  IMPORTANT:
+  - After each step, save and refresh the browser.
+*/
+
+/* STEP 1 — Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* STEP 2 — Element selectors */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blueviolet;
+}
+
+h1 {
+  color: whitesmoke;
+}
+
+/* STEP 3 — Class selectors */
+
+.card {
+  padding: 10px;
+  border: 2px solid white;
+  width: 200px;
+}
+
+.role {
+  font-style: italic;
+}
+
+.bio {
+  font-weight: bold;
+}
+
+/* STEP 4 — ID selector */
+#name {
+  font-size: xx-large;
+}
+
+
+
+

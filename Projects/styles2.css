@@ -1,0 +1,44 @@
+/* 
+  STEP 1 — Descendant combinator 
+  «¿Existe algún <p> dentro de .container? No importa cuántos niveles haya entre ellos».
+  selecciona a todos, Hijos, nietos, bisnietos - atraviesa todo el grafo
+*/
+
+.menu a {
+  outline: 1px solid yellow;
+  box-sizing: border-box;
+  color: mediumseagreen;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+
+/* 
+  STEP 2 — Child combinator
+  Selecciona únicamente a los hijos.
+  Si quieres aplicar un estilo solo al primer nivel del grafo utiliza >.
+*/
+
+ul {
+  list-style: none; /*Quita los puntos de los li */
+  display: flex;
+  justify-content: right;
+  padding: 0;
+
+}
+
+ul > li {
+  outline: 1px solid blue;
+  box-sizing: border-box;
+  width: 100px;
+}
+
+/* STEP 3 — Adjacent sibling 
+  li:first-child: Selecciona el elemento li que sea el primer hijo de su contenedor.
+*/
+
+ li:first-child + li {
+  background-color: chocolate;
+}
