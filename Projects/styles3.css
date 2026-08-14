@@ -1,0 +1,177 @@
+/*
+  🎯 PROJECT: Interactive List
+  TOPIC: Pseudo-classes & Pseudo-elements
+
+  In this file, you will PRACTICE:
+  - Reacting to user interaction using CSS
+  - Targeting elements based on their position
+  - Adding visual content without editing HTML
+  - Styling specific parts of text
+
+  ❗ IMPORTANT RULES
+  - Do NOT write HTML in this file
+  - Write ONLY CSS rules
+  - Follow each step in order
+  - Save and refresh the browser after every step
+*/
+
+/* ===============================
+   STEP 1 — Base List Item Styling
+   =============================== */
+
+/*
+  1. Select ALL <li> elements that are inside the list
+     with class "items".
+  2. Add padding inside each list item.
+  3. This spacing should make the text easier to read
+     and increase the interactive area.
+*/
+
+.items li {
+  list-style: none;
+  outline: 1px solid yellow;
+  padding: 10px;
+}
+
+/* ===============================
+   STEP 2 — Hover Interaction (:hover)
+   =============================== */
+
+/*
+  1. Use the :hover pseudo-class on the list items.
+  2. Change the background color ONLY while
+     the user’s mouse is over the item.
+  3. This visually shows that the item is interactive.
+*/
+
+li:hover {
+  background-color: blueviolet;
+}
+
+li:focus {
+  outline: 3px solid palevioletred;
+}
+
+/* ===============================
+   STEP 4 — First Item Styling (:first-child)
+   =============================== */
+
+/*
+  1. Use a pseudo-class to target ONLY the FIRST
+     list item inside the list.
+  2. Make this item visually stronger than the others.
+  3. This is commonly used to highlight priority items.
+*/
+
+li:first-child  {
+  outline: 1px solid pink;
+  color: chartreuse;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2)
+}
+
+/* ===============================
+   STEP 5 — Last Item Styling (:last-child)
+   =============================== */
+
+/*
+  1. Use a pseudo-class to target ONLY the LAST
+     list item inside the list.
+  2. Change the text color to make it appear softer
+     or less emphasized.
+  3. This helps create visual hierarchy.
+*/
+
+li:last-child {
+  color: burlywood;
+}
+
+li:last-child:hover {
+  background-color: cyan;
+}
+
+/* ===============================
+   STEP 6 — Targeting by Position (:nth-child) -target Target the SECOND list item.
+   =============================== */
+
+/*
+  1. Use a pseudo-class that allows selecting
+     an element by its position in the list.
+  2. Target the SECOND list item.
+  3. Apply a subtle background color.
+  4. Remember: counting starts at 1, not 0.
+
+  nth-child() permite seleccionar un elemento según su posición dentro del elemento padre.
+  */
+
+li:nth-child(2) {
+  background-color: grey;
+}
+
+
+/* ===============================
+   STEP 7 — Adding Content Before (::before)
+   =============================== */
+
+/*
+  1. Use a pseudo-element to insert content
+     BEFORE the text of each list item.
+  2. The inserted content should be a symbol
+     or character.
+  3. This content does NOT exist in the HTML.
+  4. Set a color for the inserted content.
+*/
+
+.html::before {
+  content: "🚀 ";
+}
+.css::before {
+  content: "👠 ";
+}
+
+.js::before {
+  content: "🎁 ";
+}
+
+
+/* ===============================
+   STEP 8 — Adding Content After (::after)
+   =============================== */
+
+/*
+  1. Use a pseudo-element to insert content
+     AFTER the text of each list item.
+  2. The inserted content should be visually subtle.
+  3. This is often used for icons or indicators.
+*/
+
+.html::after {
+  content: " ✔";
+}
+
+.css::after {
+ content: " ✔";
+}
+
+.js::after {
+  content: " ✔";
+}
+
+/* ===============================
+   STEP 9 — Styling the First Letter (::first-letter)
+   =============================== */
+
+/*
+  1. Use a pseudo-element to target ONLY
+     the first letter of each list item.
+  2. Increase the size of the first letter slightly.
+  3. This creates a typographic emphasis effect.
+*/
+
+.html::before {
+  content: '';
+}
+
+.html::first-letter {
+  color: blue;
+  font-weight: bold;
+}
