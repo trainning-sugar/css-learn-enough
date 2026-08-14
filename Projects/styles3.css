@@ -167,11 +167,16 @@ li:nth-child(2) {
   3. This creates a typographic emphasis effect.
 */
 
-.html::before {
-  content: '';
+.text {
+  outline: 1px solid blue;
 }
 
-.html::first-letter {
-  color: blue;
+/* ::first-letter solo funciona en elementos de bloque (block, inline-block, etc.). */
+span {
+  display: inline-block;
+}
+
+span::first-letter {
+  color: brown;
   font-weight: bold;
 }
