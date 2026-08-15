@@ -1,0 +1,49 @@
+
+body {
+  outline: 1px solid greenyellow;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Container */
+.page {
+  outline: 1px solid pink;
+  max-width: 800px; /* «La página puede crecer, pero nunca debe superar los 800 píxeles». */
+  margin: 0 auto; /* 0: top bottom - auto: left right */
+  padding: 20px;
+  box-sizing: border-box;
+} 
+
+
+/* display: grid convierte el contenedor en una cuadrícula
+┌──────┬──────┐
+│Caja 1│Caja 2│
+├──────┼──────┤
+│Caja 3│Caja 4│
+└──────┴──────┘
+*/
+
+.grid {
+  outline: 1px solid blueviolet;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  /*outline: 1px solid crimson;*/
+  width: 320px;
+  min-height: 200px;
+  border: 2px solid green;
+  border-radius: 10px; /*Esto le da forma al border la forma de las esquinas del borde. */
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.card:hover {
+   box-shadow: 2px 2px 10px rgb(2, 116, 46);
+}
+
+#cardB {
+  margin-top: 50px;
+}

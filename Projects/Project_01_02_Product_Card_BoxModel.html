@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card Box Model</title>
+  <link rel="stylesheet" href="styles1_2.css">
+  <!--
+    Box Model (super simple) Every element is a box with 4 layers:
+    
+    Content (text/image)
+    Padding (space inside the box)
+    Border (outline around padding)
+    Margin (space outside the box)
+    Why box-sizing matters
+    content-box → padding + border increase the final visible size. (Default)
+    border-box → padding + border stay inside the width you set.
+
+  -->
+</head>
+<body>
+  <main class="page">
+    <h1>Product Card Lab</h1>
+    <p class="subtitle">Practice width/height/padding + border/margin + shadow.</p>
+
+    <section class="grid">
+      <article class="card" id="cardA">
+        <h2 class="card__title">Galaxy Sticker Pack</h2>
+        <p class="card__price">$9.99</p>
+        <p class="card__desc">Glossy cosmic stickers for laptops and notebooks.</p>
+        <button class="card__btn">Add to Cart</button>
+      </article>
+
+      <article class="card" id="cardB">
+        <h2 class="card__title">Minimal Icon Set</h2>
+        <p class="card__price">$14.00</p>
+        <p class="card__desc">A clean icon set to practice consistent spacing.</p>
+        <button class="card__btn">Preview</button>
+      </article>
+    </section>
+  </main>
+
+
+</body>
+</html>
