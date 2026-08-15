@@ -1,0 +1,43 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  outline: 1px solid magenta;
+  max-width: 800px;
+  padding: 20px;
+  margin: auto;
+}
+
+/* 
+  Quiero que el contenedor sea fexible
+*/
+.playground {
+  outline: 1px solid lawngreen;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.box {
+  outline: 1px solid blue;
+  min-height: 150px;
+  padding: 16px;
+  border: 2px solid;
+  text-align: center;
+}
+
+.box--one {
+  border: 8px solid;
+  margin-bottom: 24px;
+  padding: 10px;
+}
+
+.box--three {
+  padding: 32px;
+}
