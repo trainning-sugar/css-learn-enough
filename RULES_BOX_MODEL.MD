@@ -1,4 +1,7 @@
 # Box Model
+
+Fuente: https://developer.mozilla.org/es/docs/Web/CSS/Guides/Box_model/Introduction
+
 - El Box Model (modelo de caja) es la forma en la que CSS representa cada elemento de una página web.
 - Every HTML element is a rectangular box with four layers (Content- padding - border - margin)
 - Determines how elements take out space on a web page
