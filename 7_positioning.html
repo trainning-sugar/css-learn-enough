@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>positioning</title>
+  <!--  -->
+  <style>
+    body {
+      padding: 0;
+      border: 0;
+    }
+
+    .static--element {
+      outline: 1px solid violet;
+    }
+
+    .relative--element {
+      outline: 1px solid mediumvioletred;
+      position: relative;
+      left: 30px;
+    }
+
+    .relative--parent {
+      position: relative;
+      width: 300px;
+      height: 1000px;
+      background-color: lightgray;
+      margin: 50px;
+    }
+
+    .absolute--child {
+      position: absolute;
+      top: 40px;
+      left: 50px;
+      background-color: lightcoral;
+    }
+
+    .fixed--element {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: yellow;
+    }
+
+    .sticky--element {
+      position: sticky;
+      top: 0;
+      background-color: lightgreen;
+      padding: 10px;
+      z-index: 100;
+    }
+
+    .box {
+      outline: 1px solid salmon;
+      width: 100px;
+      height: 100px;
+    }
+
+    .one {
+      background-color: rebeccapurple;
+      position: absolute;
+      top: 200px;
+      left: 600px;
+    }
+
+    .two {
+      background-color: yellow;
+      position: absolute;
+      top: 230px;
+      left: 610px;
+      z-index: 2;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="sticky--element">Me quedo sticky</header>
+  
+  <p class="static--element">I am static element (by default) </p>
+
+  <div class="relative--element">I am relative element (sigo el flujo)</div>
+  
+  <div class="fixed--element">I am fixed element. Salgo del flujos</div>
+
+  <div class="relative--parent">
+     I'm relative parent
+    <div class="absolute--child">
+      salgo del flujo
+      I am absolute child con respecto a mi relative parent
+    </div>
+  </div>
+
+  <div class="box one">Box 1</div>
+  <div class="box two">Box 2 (above)</div>
+
+</body>
+</html>
