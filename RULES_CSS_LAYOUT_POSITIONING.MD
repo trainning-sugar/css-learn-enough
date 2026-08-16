@@ -112,3 +112,20 @@ overflow: hidden (El contenido que sobresale se oculta.): Todo lo que no cabe de
 overflow: scroll: Siempre aparecen barras de desplazamiento.
 overflow: auto: las barras aparecen solo cuando es necesario. Si el contenido cabe, no aparecen barras.Si no cabe, aparecen automáticamente.
 ```
+
+## RGBA 
+Modelo mental: RGB como una mezcla de pinturas
+
+```txt
+rgba(0, 0, 0, 0.2) → negro con un 20 % de opacidad
+
+Rojo + Verde + Azul = Color final
+
+Y el canal alfa funciona como un cristal:
+Porque permite mantener el mismo color y cambiar únicamente el nivel de transparencia.
+
+1.0 → cristal completamente opaco
+0.5 → cristal semitransparente
+0.0 → cristal completamente transparente
+```
+

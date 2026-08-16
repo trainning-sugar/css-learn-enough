@@ -1,0 +1,62 @@
+ /*
+   🧠 PROJECT: Positioning Lab — relative/absolute/fixed/sticky
+   🎯 GOAL: Learn how static/relative/absolute/fixed/sticky behave using visible UI pieces.
+ */
+
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+ }
+
+ .sticky-header {
+  border: 1px solid mediumvioletred;
+  outline: 1px solid mediumvioletred;
+  background-color: blueviolet;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+ }
+
+
+ .page {
+  outline: 1px solid violet;
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+ }
+
+ /* STEP 3 — Make the card a relative positioning parent */
+
+ .relative-parent {
+   outline: 1px solid blue;
+   position: relative
+ }
+
+ .badge {
+  outline: 1px solid mediumorchid;
+  background: yellowgreen;
+  padding: 2px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+ }
+
+ .badge:hover {
+  background-color: yellow;
+ }
+
+ /* STEP 5 — Create a fixed floating button */
+
+.chat-fab {
+  bottom: 18px;
+  right: 18px;
+  width: 100px;
+  border-radius: 10px;
+
+ }
+
+ .chat-fab:hover {
+  background-color: rgba(142, 13, 79, 1);
+  box-shadow: 5px 5px 10px rgba(142, 13, 79, 1);
+ }
