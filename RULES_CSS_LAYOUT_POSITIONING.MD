@@ -57,13 +57,14 @@ position
 │
 ├── fixed
 │   ├── Sale del flujo
-│   ├── Se posiciona respecto al viewport(pantalla)
+│   ├── Se posiciona respecto al viewport(pantalla). Use for always visible elements (floatin buttons)
 │   ├── No se mueve con el scroll
 │
 └── sticky
-    ├── Sigue el flujo
+    ├── Sigue el flujo : using with navigation bars
     ├── Se comporta como relative
     ├── Se pega durante el scroll
+    |__Es afectado si su contenedor padre tiene un overflow
 ```
 
 ## Alignment and spacing (top, right, bottom, left, z-index)
@@ -101,6 +102,13 @@ a mayor z-index más cerca del usuario.
         20px (bottom)                 
 +----------------------+
 ```
-
-
 ## Overflow handling
+
+- Caja pequeña + contenido grande overflow
+- ¿Qué debe hacer el navegador con el contenido que no cabe?
+```txt
+overflow: visible (valor predeterminado)
+overflow: hidden (El contenido que sobresale se oculta.): Todo lo que no cabe desaparece.
+overflow: scroll: Siempre aparecen barras de desplazamiento.
+overflow: auto: las barras aparecen solo cuando es necesario. Si el contenido cabe, no aparecen barras.Si no cabe, aparecen automáticamente.
+```

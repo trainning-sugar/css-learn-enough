@@ -1,0 +1,54 @@
+/* STEP 1 — Basic page styling (visual helper) */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.page {
+  outline: 1px solid magenta;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.demo {
+  outline: 1px solid mediumvioletred;
+}
+
+/* STEP 2 — Show inline behavior (inline pills) */
+.pill--inline {
+  outline: 1px solid mediumblue;
+  padding: 5px;
+  border-radius: 10px;
+  background: yellow;
+}
+
+/* STEP 3 — Show block behavior (block pills) */
+
+.pill--block {
+  outline: 1px solid mediumblue;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: yellow;
+}
+
+/* STEP 4 — display:none removes from layout */
+.banner {
+  display: none; /* los elementos se vuelven a ajustar*/
+}
+
+/* STEP 5 — Mini gallery boxes */
+
+.grid {
+  outline: 1px solid mediumvioletred;
+  margin-top: 30px
+}
+
+/*Todos los cards de grid */
+.grid .card {
+  background: mediumorchid;
+  padding: 20px;
+  border: 2px solid yellow;
+  border-radius: 5px;
+}
