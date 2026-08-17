@@ -1,0 +1,61 @@
+/* 
+  ✅ TOPICS PRACTICED
+  - display: block vs inline vs none
+  - position: static / relative / absolute / fixed / sticky
+  - top / right / bottom / left
+  - overflow: visible / hidden / scroll / auto
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  outline: 1px solid violet;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.row {
+  outline: 1px solid blueviolet;
+  display: grid;
+  gap: 20px;
+  height: 900px;
+}
+
+.row .box {
+  outline: 1px solid blueviolet;
+  background: pink;
+  border: 2px solid mediumvioletred;
+  padding: 10px;
+  border-radius: 5px;
+  height: 180px
+}
+
+.box--visible {
+  overflow: visible;
+}
+
+.box--hidden {
+  overflow: hidden;
+}
+
+.box--scroll {
+  overflow: scroll;
+}
+
+.box--auto {
+  overflow: auto;
+}
+
+.header--sticky {
+  position: sticky;
+  top: 0px;
+  background-color: blueviolet;
+  height: 50px;
+  top: 0;
+  z-index: 10;
+}
