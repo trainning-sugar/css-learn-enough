@@ -1,0 +1,42 @@
+/* STEP 1 — Base page font + background */
+
+body {
+  outline: 1px solid magenta;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* STEP 2 — Poster container typography */
+.poster {
+  background: violet;
+  width: 520px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/* STEP 3 — Headline hierarchy (font-size + weight) */
+
+.headline {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+/* STEP 4 — Tagline and subhead (style differences) */
+
+.tagline {
+  font-size: 1.5rem;
+}
+
+.subhead {
+  font-style: italic;
+}
+
+/* STEP 5 — Labels (weight + letter spacing) */
+.label {
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
