@@ -1,0 +1,47 @@
+
+/* STEP 1 — Base typography + page width */
+
+body {
+  margin: 0;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.page {
+  outline: 1px solid mediumvioletred;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* STEP 2 — Text alignment */
+
+.article {
+  outline: 1px solid blue;
+  text-align: center;
+}
+
+/* STEP 3 — Line height (MOST IMPORTANT) */
+.para {
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+/* STEP 4 — Spacing (letter + word spacing) */
+.kicker {
+  letter-spacing: 0.06em;
+}
+
+/* STEP 5 — Transform + decoration */
+
+.meta {
+  text-transform: uppercase;
+}
+
+.author {
+  text-decoration: underline;
+}
+
+.note {
+  text-transform: uppercase;
+}
