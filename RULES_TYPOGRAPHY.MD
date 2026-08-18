@@ -1,48 +1,50 @@
 # Typography
 
-  ✅ TYPOGRAPHY TOPICS PRACTICED
-  - font-family
-  - font-size
-  - font-weight
-  - font-style
-  - text-align
-  - line-height
-  - letter-spacing / word-spacing
-  - text-transform
-  - text-decoration
-  - importing Google Fonts (project 3)
-- Font Family (fonts)
-- Font Size
-- Font weight and style (bold, italic, etc)
-- Text alignment & spacing (line height, letter spacing): 
-line-height controla el espacio vertical entre las líneas de un texto.
-p {
-  font-size: 16px;
-  line-height: 1.5;
-}
+- Fonts (family, size, weight, style)
 
-16 × 1.5 = 24 px
+font-family: which font is used (and fallbacks)
 
-letter
-
-  text-align sirve para alinear el contenido de texto dentro de un contenedor.
-  text-align solo mueve el contenido que está dentro del div.
-  ```txt
-  left 
-  center
-  right
-  justify
-  ```
-- Text transformation and decoration(uppercase, underline, etc)
-- Google font (Importing custom fonts)
+font-size: how big the text is
+- em (El elemento padre) 
+- rem (El elemento raíz (html))
+- viewport - (vw - vh)
 
 ```txt
-por default 
-1em - 1rem = 16px 
-em: el tamaño del padre
+  .container : font-size: 20px;
+   p : font-size: 1em;
 ```
 
-# Transformation & Decoration
-- uppercase
-- lowercase
-- capitalize
+
+font-weight: how thick/bold the text is
+
+font-style: normal vs italic
+
+Readability + text styling
+
+text-align: left/center/right/justify
+
+line-height: vertical spacing between lines (huge for readability)
+
+letter-spacing / word-spacing: spacing between letters/words
+
+text-transform: uppercase/lowercase/capitalize
+
+text-decoration: underline/line-through/none
+
+Google Fonts (Project 3)
+You’ll import fonts from Google Fonts and apply them like a real brand system.
+
+Checklist
+Used font-family with a fallback
+
+Used font-size for hierarchy (title bigger than body)
+
+Used at least two font-weights
+
+Used line-height for comfortable paragraphs
+
+Used at least one text-transform
+
+Used at least one text-decoration
+
+(Project 3) Imported Google Fonts successfully
