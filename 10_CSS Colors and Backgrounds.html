@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors and background</title>
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;  
+    }
+    .red {
+      color: red;
+    }
+
+    .blue {
+      color: blue;
+    }
+
+    .custom {
+      color: #2ABD7D
+    }
+
+    .rgb {
+      color: rgb(45, 73, 39)
+    }
+
+    .rgba {
+      color: rgba(45, 73, 39, 0.4) /*Opacity */
+    }
+
+    .bg-light {
+      background-color: lightgray;
+      padding: 20px;
+    }
+
+    .bg-dark {
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+
+    .bg-images {
+      height: 100vh;
+      background-image: url("fresas.jpg"); /*La imagen de fondo no forma parte del contenido. */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .gradient {
+      background: linear-gradient(to left, red, blue );
+    }
+
+    .radial-gradient {
+      background: radial-gradient(circle, red, blue);
+    }
+
+  </style>
+</head>
+<body>
+  <p class="red">This is red</p>
+  <p class="blue">This is blue</p>
+  <p class="custom">This is custom</p>
+  <p class="rgb">This is custom rgb</p>
+  <p class="rgba">This is custom rgba</p>
+    
+    <!--Background color-->
+  <div class="bg-light">Light background</div>
+  <div class="bg-dark">Dark background</div>
+    
+    <!--Background Images-->
+  <div class="bg-images radial-gradient">Background Images</div>
+
+</body>
+</html>
