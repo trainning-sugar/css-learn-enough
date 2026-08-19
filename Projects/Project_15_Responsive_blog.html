@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Blog</title>
+  <link rel="stylesheet" href="style15.css">
+</head>
+
+<body>
+    <!--Header Section-->
+    <header>
+       <h1>My Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="container">
+    <!--main contact-->
+    <main>
+      <!-- About section-->
+      <section id="about">
+        <h2>About me</h2>
+        <p>
+          Welcome to my personal blog! I share my thoughts on web development, 
+          technology, and more.
+        </p>
+      </section>
+
+      <!--blog articles-->
+      <article>
+        <h2>Understanding Semantic HTML</h2>
+        <p>Semantic HTML is a way to write HTML that describes content...</p>
+        <img 
+          src="/profile.png"
+          alt="blog-photo-1"
+          width="500"
+        />
+      </article>
+
+      <article>
+        <h2>How to add Media in HTML</h2>
+        <p>Adding images, videos and audio files to a webpages enhaces user experience</p>
+        <figure>
+          <figcaption>Listen to the T-Rex:</figcaption>
+          <audio controls src="/shared-assets/audio/t-rex-roar.mp3"></audio>
+          <a href="/shared-assets/audio/t-rex-roar.mp3"> Download audio </a>
+        </figure>
+      </article>
+
+      <article>
+        <h2>Watch my lastes video</h2>
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/_jDNAf3CzeY?si=M3kuVhJUdRW5pEFW" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+      </article>
+    </main>
+    
+    <!--Aside section-->
+    <aside>
+      <h3>More links</h3>
+      <ul>
+        <li><a href="#">Linkedin</a></li>
+        <li><a href="#">Medium</a></li>
+        <li><a href="#">Portfolio</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <!--Footer-->
+  <footer id="contact">
+      <p>
+        contact me at: 
+        <a href="mailto:mlvilchezp@gmail.com">mlvilchezp@gmail.com</a>
+      </p>
+      <p>Call me at: <a href="tel:+123456789">+123456789</a></p>
+      <p>&copy; 2026 my Blog</p>
+  </footer>
+
+</body>
+</html>
