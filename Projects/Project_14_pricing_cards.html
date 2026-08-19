@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing cards</title>
+  <style>
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .pricing {
+      outline: 1px solid blue;
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1;
+      padding: 20px;
+      outline: 1px solid blue;
+      text-align: center;
+      background-color: blueviolet;
+      border-radius: 10px;
+    }
+
+    .card:nth-child(1)::before {
+      content: "$3 ";
+    }
+
+    .card:nth-child(2)::before {
+      content: "$5 ";
+    }
+    .card:nth-child(3)::before {
+      content: "$10 ";
+    }
+
+  </style>
+</head>
+<body>
+    <section class="pricing">
+      <div class="card">Basic</div>
+      <div class="card">Pro</div>
+      <div class="card">Premium</div>
+    </section>
+</body>
+</html>

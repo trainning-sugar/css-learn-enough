@@ -5,27 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grids</title>
   <style>
+
+      body {
+        box-sizing: border-box;
+      }
+
       .wrapper {
         outline: 1px solid rosybrown;
+        padding: 0.5em;
         display: grid;
+        grid-template-columns: repeat(3, 1fr); /*Tres columnas del mismo tamaño */ 
+        grid-auto-rows: minmax(100px, auto); /*min size 100px but can grow if need it */
+        gap: 2em;
       }
 
       .box {
         outline: 1px solid burlywood;
-        width: 200px;
-        padding: 20px;
         border: 2px solid blueviolet;
         border-radius: 5px;
+        text-align: center;
       }
+      .box:hover {
+        box-shadow: 2px 2px 20px rgba(245, 40, 145, 0.8);
+      }
+
+      /*Posicionando los boxes */
+      .one {
+        grid-column: 1/3;
+        grid-row: 1;
+      }
+
+      .two {
+        grid-column: 2/4;
+      }
+
+      .three {
+        grid-column: 1/2;
+        grid-row: 3/6 ;
+      }
+
+      .four {
+        grid-column: 1/4;
+      }
+
+      .five {
+        grid-column: 3/4;
+        grid-row: 1;
+      }
+
+      .seven {
+        grid-column: 2/4;
+        grid-row: 3;
+      }
+
+     
+
+      .seven2 {
+        grid-row: 5;
+      }
+
+      .seven3 {
+        grid-row: 5;
+      }
+
+
   </style>
 </head>
 <body>
     <div class="wrapper">
-        <div class="box">One</div>
-        <div class="box">Two</div>
-        <div class="box">Three</div>
-        <div class="box">Four</div>
-        <div class="box">Five</div>
+        <div class="box one">One</div>
+        <div class="box two">Two</div>
+        <div class="box three">Three</div>
+        <div class="box four">Four</div>
+        <div class="box five">Five</div>
+        <div class="box six">Six</div>
+        <div class="box seven1">Hola 1</div>
+        <div class="box seven2">Hola 2</div>
+        <div class="box seven3">Hola 3</div>
+        <div class="box seven">Hola 4</div>
     </div>
 </body>
 </html>
